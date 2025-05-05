@@ -1,0 +1,4 @@
+.about {
+  height: calc(100vh - 8.1rem);
+  background-color: blueviolet;
+}

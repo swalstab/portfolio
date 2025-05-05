@@ -1,0 +1,8 @@
+.homepage {
+  height: calc(100vh - 8.1rem);
+  /* background-color: var(--color-light); */
+}
+
+.homepage h1 {
+  font-size: 4.5rem;
+}
