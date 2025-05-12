@@ -1,0 +1,48 @@
+import { lazy } from "react";
+import "./ProjectCard.css";
+
+import { ProjectProps } from "../pages/ProjectsPage";
+
+const TechTag = lazy(() => import("./TechTag"));
+
+function ProjectCard({ project }: { project: ProjectProps }) {
+  return (
+    <div className="project">
+      <figure className="project-img">
+        <img src={`./src/assets/img/${project.image}`} alt="" />
+      </figure>
+      <div className="project-content">
+        <p className="project-title">{project.title}</p>
+        <p className="project-description">{project.description}</p>
+        <div className="project-tags">
+          {[...new Set(project.technologies)].map((tech, idx) => (
+            <TechTag key={idx} tech={tech} />
+          ))}
+        </div>
+
+        <ul className="project-btns">
+          {project.sourceCode.exist && (
+            <li>
+              <a href={project.sourceCode.source!} className="project-btn">
+                <img
+                  src="./src/assets/img/logo/github-mark.svg"
+                  alt="GitHub logo"
+                />
+                GitHub
+              </a>
+            </li>
+          )}
+          {project.website.exist && (
+            <li>
+              <a href={project.website.source!} className="project-btn">
+                Live View
+              </a>
+            </li>
+          )}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default ProjectCard;

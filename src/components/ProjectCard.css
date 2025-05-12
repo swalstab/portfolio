@@ -1,0 +1,81 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s;
+  background-color: var(--bg-color--card);
+}
+
+.project-img {
+  overflow: hidden;
+}
+
+.project-img img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.project-img img:hover {
+  transform: scale(1.1);
+}
+
+.project-content {
+  flex-grow: 1;
+  padding: 4.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.project-description {
+  font-size: 1.6rem;
+  color: var(--text-color--secondary);
+  margin-bottom: 1.6rem;
+}
+
+.project-tags {
+  margin-bottom: 3.2rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.project-btns {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 4.8rem;
+  margin-top: auto;
+}
+
+.project-btn img {
+  height: 2.4rem;
+}
+
+.project-btn:link,
+.project-btn:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: var(--text-color--accent);
+  background-color: var(--accent);
+  border-radius: 4.8rem;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.3s;
+}
+
+.project-btn:hover,
+.project-btn:active {
+  background-color: var(--accent--darker);
+}
