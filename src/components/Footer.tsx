@@ -1,13 +1,13 @@
-import styles from "./Footer.module.css";
+import "./Footer.css";
 
 const currentDate: Date = new Date();
 const currentYear: number = currentDate.getFullYear();
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className="footer">
       <div className="container">
-        <p className={styles.copyright}>
+        <p className="copyright">
           &copy; <span>{currentYear}</span> Stefanie Walstab
         </p>
       </div>
