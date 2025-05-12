@@ -1,4 +1,4 @@
-import styles from "./TechTag.module.css";
+import "./TechTag.css";
 
 function TechTag({ tech }: { tech: string }) {
   let src: string = "./src/assets/img/logo/";
@@ -14,7 +14,7 @@ function TechTag({ tech }: { tech: string }) {
       break;
   }
 
-  return <img src={src} className={styles.tag} />;
+  return <img src={src} className="tag" />;
 }
 
 export default TechTag;
