@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 :root {
-  --color-light: #f3f3f3;
+  --bg-color: #fff;
+  --bg-color--card: #fff;
+  --text-color--primary: #333;
+  --text-color--secondary: #555;
+  --text-color--accent: #333;
+  --accent: #bbb;
+  --accent--darker: #aaa;
+}
+
+[data-theme="dark"] {
+  --bg-color: #222;
+  --bg-color--card: #2b2b2b;
+  --text-color--primary: #fff;
+  --text-color--secondary: #ccc;
 }
 
 * {
@@ -15,11 +28,7 @@ html {
 }
 
 body {
-  /* max-width: 140rem;
-  margin: 0 auto; */
-  background-color: #333;
   font-family: "Poppins", sans-serif;
-  color: #fff;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -28,4 +37,32 @@ body {
   max-width: 140rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  color: var(--text-color--primary);
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  padding-top: 8rem;
+  margin-bottom: 4.8rem;
 }
