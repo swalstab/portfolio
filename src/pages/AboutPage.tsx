@@ -1,13 +1,12 @@
-// import PageNav from "./PageNav";
 import styles from "./AboutPage.module.css";
 
 function AboutPage() {
   return (
     <main className={styles.about}>
-      {/* <PageNav /> */}
-
       <section>
-        <h1>About</h1>
+        <div className="container">
+          <h2 className="heading-secondary">About</h2>
+        </div>
       </section>
     </main>
   );
