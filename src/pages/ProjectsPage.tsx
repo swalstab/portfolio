@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import styles from "./ProjectsPage.module.css";
+import "./ProjectsPage.css";
 
 const ProjectCard = lazy(() => import("../components/ProjectCard"));
 
@@ -28,7 +28,7 @@ const projects = await getData("../../projects.json");
 
 function ProjectsPage() {
   return (
-    <main className={styles.projects}>
+    <main className="projects">
       <section>
         <div className="container">
           <h2 className="heading-secondary">Projects</h2>
