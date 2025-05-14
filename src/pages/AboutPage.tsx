@@ -1,8 +1,8 @@
-import styles from "./AboutPage.module.css";
+import "./AboutPage.css";
 
 function AboutPage() {
   return (
-    <main className={styles.about}>
+    <main className="about">
       <section>
         <div className="container">
           <h2 className="heading-secondary">About</h2>
