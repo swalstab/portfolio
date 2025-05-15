@@ -3,6 +3,7 @@
 :root {
   --bg-color: #fff;
   --bg-color--hover: #ddd;
+  --bg-color--hover--dark: #444;
   --bg-color--card: #fff;
   --text-color--primary: #333;
   --text-color--secondary: #555;
