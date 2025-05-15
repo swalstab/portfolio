@@ -2,6 +2,7 @@
 
 :root {
   --bg-color: #fff;
+  --bg-color--hover: #ddd;
   --bg-color--card: #fff;
   --text-color--primary: #333;
   --text-color--secondary: #555;
@@ -13,9 +14,10 @@
 
 [data-theme="dark"] {
   --bg-color: #222;
+  --bg-color--hover: #444;
   --bg-color--card: #2b2b2b;
   --text-color--primary: #fff;
-  --text-color--secondary: #ccc;
+  --text-color--secondary: #ddd;
 }
 
 * {
