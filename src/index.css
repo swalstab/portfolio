@@ -6,6 +6,7 @@
   --text-color--primary: #333;
   --text-color--secondary: #555;
   --text-color--accent: #333;
+  --text-color--accent--darker: #222;
   --accent: #bbb;
   --accent--darker: #aaa;
 }
@@ -33,6 +34,11 @@ body {
   line-height: 1.6;
 }
 
+.dark {
+  background-color: #222;
+  color: #fff;
+}
+
 .container {
   max-width: 140rem;
   padding: 0 3.2rem;
@@ -52,7 +58,6 @@ body {
 .heading-primary,
 .heading-secondary {
   font-weight: 700;
-  color: var(--text-color--primary);
 }
 
 .heading-primary {
