@@ -44,6 +44,11 @@
   background-color: var(--bg-color--hover);
 }
 
+.dark a:hover,
+.dark .btn-theme:hover {
+  background-color: #444;
+}
+
 .nav .nav-item:link {
   padding: 1.2rem;
 }
