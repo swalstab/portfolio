@@ -13,12 +13,12 @@ function ProjectCard({ project }: { project: ProjectProps }) {
       </figure>
       <div className="project-content">
         <p className="project-title">{project.title}</p>
-        <p className="project-description">{project.description}</p>
         <div className="project-tags">
           {[...new Set(project.technologies)].map((tech, idx) => (
             <TechTag key={idx} tech={tech} />
           ))}
         </div>
+        <p className="project-description">{project.description}</p>
 
         <ul className="project-btns">
           {project.sourceCode.exist && (
