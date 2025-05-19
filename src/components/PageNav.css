@@ -54,6 +54,12 @@
   width: 4.8rem;
   padding: 1rem;
   border-radius: 5rem;
+  transition: all 0.3s;
+}
+
+.nav-git img {
+  height: 100%;
+  width: 100%;
 }
 
 .btn-theme {

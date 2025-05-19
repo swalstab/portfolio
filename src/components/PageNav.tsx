@@ -38,12 +38,8 @@ function PageNav({
             </NavLink>
           </li>
           <li>
-            <Link to="https://github.com/swalstab">
-              <img
-                src={`./src/assets/img/logo/${imgGit}`}
-                alt="logo GitHub"
-                className="nav-git"
-              />
+            <Link className="nav-git" to="https://github.com/swalstab">
+              <img src={`./src/assets/img/logo/${imgGit}`} alt="logo GitHub" />
             </Link>
           </li>
           <li>
