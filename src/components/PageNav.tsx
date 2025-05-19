@@ -18,7 +18,8 @@ function PageNav({
     <header className={`header ${isHome ? "dark" : ""}`}>
       <Link to="/">
         <img
-          src="./src/assets/img/logo/logo-sw.svg"
+          // src="./src/assets/img/logo/logo-sw.svg"
+          src="./src/assets/img/logo/user-solid.svg"
           alt="SW logo"
           className="main-logo"
         />
@@ -41,7 +42,7 @@ function PageNav({
               <img
                 src={`./src/assets/img/logo/${imgGit}`}
                 alt="logo GitHub"
-                className="nav-logo"
+                className="nav-git"
               />
             </Link>
           </li>
