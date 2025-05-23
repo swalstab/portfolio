@@ -1,7 +1,7 @@
 import "./TechTag.css";
 
 function TechTag({ tech }: { tech: string }) {
-  let src: string = "./src/assets/img/logo/";
+  let src: string = "./src/assets/img/icon/";
   switch (tech) {
     case "javascript":
       src += "javascript-logo.svg";

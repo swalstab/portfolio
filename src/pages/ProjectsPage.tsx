@@ -13,6 +13,7 @@ export interface ProjectProps {
   title: string;
   description: string;
   image: string;
+  alt: string;
   technologies: string[];
   sourceCode: HasLink;
   website: HasLink;

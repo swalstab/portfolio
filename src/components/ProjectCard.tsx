@@ -9,7 +9,10 @@ function ProjectCard({ project }: { project: ProjectProps }) {
   return (
     <div className="project">
       <figure className="project-img">
-        <img src={`./src/assets/img/${project.image}`} alt="" />
+        <img
+          src={`./src/assets/img/projects/${project.image}`}
+          alt={project.alt}
+        />
       </figure>
       <div className="project-content">
         <p className="project-title">{project.title}</p>
@@ -25,7 +28,7 @@ function ProjectCard({ project }: { project: ProjectProps }) {
             <li>
               <a href={project.sourceCode.source!} className="project-btn">
                 <img
-                  src="./src/assets/img/logo/github-mark.svg"
+                  src="./src/assets/img/icon/github-mark.svg"
                   alt="GitHub logo"
                 />
                 GitHub
