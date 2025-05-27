@@ -1,14 +1,17 @@
-import styles from "./HomePage.module.css";
+import "./HomePage.css";
 
 function HomePage() {
   return (
-    <main className={styles.homepage}>
-      <section>
-        <h1>
-          Stefanie
-          <br />
-          Walstab
-        </h1>
+    <main className="homepage dark">
+      <section className="hero">
+        <div className="parallax-container">
+          <div className="name">
+            <h1 className="heading-primary first-name">Stefanie</h1>
+            <div className="surname">
+              <span>Walstab</span>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

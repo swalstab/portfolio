@@ -1,0 +1,54 @@
+.hero {
+  height: calc(100vh - 18.24rem);
+}
+
+.parallax-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #102924;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.first-name {
+  letter-spacing: 1.6rem;
+  margin-right: -1.6rem;
+}
+
+.surname {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  width: 100%;
+  font-size: 5.2rem;
+  letter-spacing: 0.8rem;
+}
+
+.surname span {
+  margin-right: -0.8rem;
+}
+
+.surname::before,
+.surname::after {
+  width: 100%;
+  height: 0.4rem;
+  content: "";
+  background-color: #fff;
+}
+
+.parallax {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

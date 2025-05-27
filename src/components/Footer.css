@@ -1,5 +1,7 @@
 .footer {
+  position: relative;
   padding: 3.2rem 0;
+  background-color: transparent;
 }
 
 .copyright {
