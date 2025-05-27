@@ -18,8 +18,7 @@ function PageNav({
     <header className={`header ${isHome ? "dark" : ""}`}>
       <Link to="/">
         <img
-          // src="./src/assets/img/icon/logo-sw.svg"
-          src="./src/assets/img/icon/user-solid.svg"
+          src="./src/assets/img/icon/logo-sw.png"
           alt="SW logo"
           className="main-logo"
         />
