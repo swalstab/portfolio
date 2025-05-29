@@ -8,7 +8,24 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #102924;
+}
+
+.gradient-background {
+  background-image: radial-gradient(circle, #1e6f3c, #14532d, #0b3d2e, #222);
+  background-size: 180% 230%;
+  animation: bg-animation 15s infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left top;
+  }
+  50% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
 }
 
 .name {
@@ -21,7 +38,7 @@
 }
 
 .first-name {
-  letter-spacing: 1.6rem;
+  letter-spacing: 2.4rem;
   margin-right: -1.6rem;
 }
 
@@ -31,7 +48,7 @@
   gap: 1.6rem;
   width: 100%;
   font-size: 5.2rem;
-  letter-spacing: 0.8rem;
+  letter-spacing: 1.2rem;
 }
 
 .surname span {

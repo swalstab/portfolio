@@ -76,6 +76,5 @@
 
 .project-btn:hover,
 .project-btn:active {
-  color: var(--text-color--accent--darker);
   background-color: var(--accent--darker);
 }
