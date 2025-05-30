@@ -16,11 +16,12 @@ function PageNav({
 
   return (
     <header className={`header ${isHome ? "dark" : ""}`}>
-      <Link to="/">
+      <Link to="/" aria-label="go to Homepage">
         <img
           src="./src/assets/img/icon/logo-sw.png"
-          alt="SW logo"
+          alt=""
           className="main-logo"
+          draggable="false"
         />
       </Link>
 
@@ -37,16 +38,29 @@ function PageNav({
             </NavLink>
           </li>
           <li>
-            <Link className="nav-git" to="https://github.com/swalstab">
-              <img src={`./src/assets/img/icon/${imgGit}`} alt="GitHub logo" />
+            <Link
+              className="nav-git"
+              to="https://github.com/swalstab"
+              aria-label="go to GitHub Page"
+            >
+              <img
+                src={`./src/assets/img/icon/${imgGit}`}
+                alt=""
+                draggable="false"
+              />
             </Link>
           </li>
           <li>
-            <button className="btn-theme" onClick={handleThemeButton}>
+            <button
+              className="btn-theme"
+              onClick={handleThemeButton}
+              aria-label={`Use ${isDark ? "Light" : "Dark"} Mode`}
+            >
               <img
                 src={`./src/assets/img/icon/${imgTheme}.svg`}
-                alt={`icon ${imgTheme}`}
+                alt=""
                 style={isDark || isHome ? { filter: "invert()" } : {}}
+                draggable="false"
               />
             </button>
           </li>
