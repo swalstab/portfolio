@@ -3,16 +3,16 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import "./PageNav.css";
 
 function PageNav({
-  isDark,
+  theme,
   handleThemeButton,
 }: {
-  isDark: boolean;
+  theme: string;
   handleThemeButton: () => void;
 }) {
   const isHome: boolean = useLocation().pathname === "/";
   const imgGit: string =
-    isDark || isHome ? "github-mark-white.svg" : "github-mark.svg";
-  const imgTheme: string = isDark ? "sun" : "moon";
+    theme === "dark" || isHome ? "github-mark-white.svg" : "github-mark.svg";
+  const imgTheme: string = theme === "dark" ? "sun" : "moon";
 
   return (
     <header className={`header ${isHome ? "dark" : ""}`}>
@@ -54,12 +54,12 @@ function PageNav({
             <button
               className="btn-theme"
               onClick={handleThemeButton}
-              aria-label={`Use ${isDark ? "Light" : "Dark"} Mode`}
+              aria-label={`Use ${theme === "dark" ? "Light" : "Dark"} Mode`}
             >
               <img
                 src={`./src/assets/img/icon/${imgTheme}.svg`}
                 alt=""
-                style={isDark || isHome ? { filter: "invert()" } : {}}
+                style={theme === "dark" || isHome ? { filter: "invert()" } : {}}
                 draggable="false"
               />
             </button>

@@ -12,18 +12,19 @@ const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
   const defaultDark: boolean = window.matchMedia(
-    "(prefers-color-scheme: dark"
+    "(prefers-color-scheme: dark)"
   ).matches;
-  const [isDark, setIsDark] = useLocalStorage("isDark", defaultDark);
+  const defaultTheme = defaultDark ? "dark" : "light";
+  const [theme, setTheme] = useLocalStorage("theme", defaultTheme);
 
   function handleThemeButton(): void {
-    setIsDark(() => !isDark);
+    setTheme((theme) => (theme === "dark" ? "light" : "dark"));
   }
 
   return (
-    <div className="app" data-theme={isDark ? "dark" : "light"}>
+    <div className="app" data-theme={theme}>
       <BrowserRouter>
-        <PageNav isDark={isDark} handleThemeButton={handleThemeButton} />
+        <PageNav theme={theme} handleThemeButton={handleThemeButton} />
 
         <Routes>
           <Route index element={<HomePage />} />
