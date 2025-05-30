@@ -11,7 +11,7 @@
 }
 
 .gradient-background {
-  background-image: radial-gradient(circle, #1e6f3c, #14532d, #0b3d2e, #222);
+  background-image: var(--gradient--homepage);
   background-size: 180% 230%;
   animation: bg-animation 15s infinite;
 }
