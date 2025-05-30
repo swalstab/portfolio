@@ -30,6 +30,7 @@ function ProjectCard({ project }: { project: ProjectProps }) {
                 <img
                   src="./src/assets/img/icon/github-mark.svg"
                   alt="GitHub logo"
+                  draggable="false"
                 />
                 GitHub
               </a>

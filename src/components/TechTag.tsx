@@ -14,7 +14,14 @@ function TechTag({ tech }: { tech: string }) {
       break;
   }
 
-  return <img src={src} className="tag" />;
+  return (
+    <img
+      src={src}
+      className="tag"
+      alt={`${tech.slice(0, 1).toUpperCase() + tech.slice(1)} Icon`}
+      draggable="false"
+    />
+  );
 }
 
 export default TechTag;
