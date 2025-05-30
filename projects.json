@@ -1,0 +1,41 @@
+[
+  {
+    "id": "001",
+    "title": "RunWise",
+    "description": "A web application providing helpful tools for runners. At the moment it includes a pace calculator.",
+    "image": "runwise.png",
+    "alt": "screenshot",
+    "technologies": ["react", "javascript"],
+    "sourceCode": {
+      "exist": true,
+      "source": "https://github.com/swalstab/runwise"
+    },
+    "website": { "exist": false }
+  },
+  {
+    "id": "002",
+    "title": "Advent of Code 2024",
+    "description": "Interactive interface for Advent of Code 2024 solutions — accepts input and displays results (all solutions are written in JavaScript)",
+    "image": "advent_of_code_2024.png",
+    "alt": "screenshot",
+    "technologies": ["react", "javascript"],
+    "sourceCode": {
+      "exist": true,
+      "source": "https://github.com/swalstab/advent_of_code_2024"
+    },
+    "website": { "exist": false }
+  },
+  {
+    "id": "003",
+    "title": "Portfolio Website",
+    "description": "My portfolio built with TypeScript, featuring my projects. All components are handcrafted using plain CSS",
+    "image": "portfolio.png",
+    "alt": "screenshot",
+    "technologies": ["react", "typescript"],
+    "sourceCode": {
+      "exist": true,
+      "source": "https://github.com/swalstab/portfolio"
+    },
+    "website": { "exist": false }
+  }
+]
