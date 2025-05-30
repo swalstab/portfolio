@@ -11,10 +11,13 @@
   background-color: transparent;
 }
 
+.link--home {
+  border-radius: 50%;
+}
+
 .main-logo {
   height: 5.2rem;
   display: block;
-  border-radius: 50%;
 }
 
 .nav {
