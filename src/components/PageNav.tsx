@@ -18,7 +18,7 @@ function PageNav({
     <header className={`header ${isHome ? "dark" : ""}`}>
       <Link to="/" aria-label="go to Homepage" className="link--home">
         <img
-          src="./src/assets/img/icon/logo-sw.png"
+          src="./src/assets/img/icon/logo-sw-110.png"
           alt=""
           className="main-logo"
           draggable="false"
