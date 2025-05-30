@@ -1,8 +1,8 @@
 .project {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  border-radius: 1.2rem;
   overflow: hidden;
   background-color: var(--bg-color--card);
 }
@@ -29,9 +29,9 @@
 }
 
 .project-title {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
 }
 
 .project-tags {
@@ -59,6 +59,7 @@
 
 .project-btn img {
   height: 2.4rem;
+  filter: invert(5%);
 }
 
 .project-btn:link,
@@ -67,14 +68,15 @@
   align-items: center;
   gap: 0.8rem;
   text-decoration: none;
-  color: var(--text-color--accent);
-  background-color: var(--accent);
-  border-radius: 4.8rem;
-  padding: 0.8rem 1.6rem;
+  color: var(--text-color--btn);
+  background-color: var(--bg-color--btn);
+  border-radius: 5rem;
+  padding: 0.6rem 1.2rem;
   transition: all 0.3s;
 }
 
 .project-btn:hover,
 .project-btn:active {
-  background-color: var(--accent--darker);
+  color: var(--text-color--btn--darker);
+  background-color: var(--bg-color--btn--darker);
 }
