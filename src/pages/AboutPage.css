@@ -17,6 +17,7 @@
 
 .about-img {
   width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: -4.8rem;
@@ -26,15 +27,13 @@
   /* display: none; */
 }
 
-.container--about-heading {
-  display: flex;
-  gap: 1.2rem;
-  margin-bottom: 3.2rem;
-}
-
 .about-heading {
+  display: flex;
+  gap: 1.1rem;
   font-size: 5.2rem;
+  font-weight: 700;
   line-height: 1.05;
+  margin-bottom: 3.2rem;
 }
 
 .active-language {
@@ -80,5 +79,6 @@
 
 .location-icon {
   height: 3rem;
+  width: auto;
   filter: var(--invert-tertiary);
 }

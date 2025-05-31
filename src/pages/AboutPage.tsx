@@ -19,11 +19,11 @@ function AboutPage() {
           />
         </div>
         <div className="about-content--text">
-          <div className="container--about-heading">
-            <h2 className="about-heading">Hallo,</h2>
-            <h2 className="about-heading">Hola,</h2>
-            <h2 className="about-heading active-language">Hello</h2>
-          </div>
+          <h2 className="about-heading">
+            <span className="">Hallo,</span>
+            <span className="">Hola,</span>
+            <span className="active-language">Hello</span>
+          </h2>
 
           <p className="about-description">
             I’m Stefanie Walstab, a frontend developer from Germany with an
