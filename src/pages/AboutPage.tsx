@@ -1,3 +1,7 @@
+import meImage from "../assets/img/about/me.png";
+import laptopIamge from "../assets/img/about/laptop.png";
+import locationIcon from "../assets/img/icon/location.svg";
+
 import "./AboutPage.css";
 
 function AboutPage() {
@@ -7,13 +11,13 @@ function AboutPage() {
         <div className="about-content--portrait">
           <img
             className="about-img"
-            src="./src/assets/img/about/me.png"
+            src={meImage}
             alt="cartoon profile picture"
             draggable="false"
           />
           <img
             className="about-img laptop"
-            src="./src/assets/img/about/laptop.png"
+            src={laptopIamge}
             alt="cartoon laptop"
             draggable="false"
           />
@@ -41,7 +45,7 @@ function AboutPage() {
           <div className="about-location">
             <img
               className="location-icon"
-              src="./src/assets/img/icon/location.svg"
+              src={locationIcon}
               alt="icon location"
               draggable="false"
             />

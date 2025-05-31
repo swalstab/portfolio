@@ -1,4 +1,7 @@
 import { lazy } from "react";
+
+import githubLogo from "../assets/img/icon/github-mark.svg";
+
 import "./ProjectCard.css";
 
 import { ProjectProps } from "../pages/ProjectsPage";
@@ -27,11 +30,7 @@ function ProjectCard({ project }: { project: ProjectProps }) {
           {project.sourceCode.exist && (
             <li>
               <a href={project.sourceCode.source!} className="project-btn">
-                <img
-                  src="./src/assets/img/icon/github-mark.svg"
-                  alt="GitHub logo"
-                  draggable="false"
-                />
+                <img src={githubLogo} alt="GitHub logo" draggable="false" />
                 GitHub
               </a>
             </li>
