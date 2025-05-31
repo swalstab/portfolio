@@ -59,7 +59,7 @@ const projects: ProjectProps[] = [
       exist: true,
       source: "https://github.com/swalstab/portfolio",
     },
-    website: { exist: true, source: "https://omnifood-sw.netlify.app/" },
+    website: { exist: true, source: "https://swalstab.netlify.app/" },
   },
 ];
 
