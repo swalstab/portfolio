@@ -1,5 +1,6 @@
 import { lazy } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import useLocalStorage from "use-local-storage";
 
 import "./App.css";
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <div className="app" data-theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <PageNav theme={theme} handleThemeButton={handleThemeButton} />
 
         <Routes>
@@ -33,7 +34,7 @@ function App() {
         </Routes>
 
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
