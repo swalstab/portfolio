@@ -1,31 +1,34 @@
 import { lazy } from "react";
+import projectsData, { ProjectProps } from "../projectsData.ts";
 import "./ProjectsPage.css";
 
 const ProjectCard = lazy(() => import("../components/ProjectCard"));
 
-interface HasLink {
-  exist: boolean;
-  source: string | null;
-}
+// interface HasLink {
+//   exist: boolean;
+//   source: string | null;
+// }
 
-export interface ProjectProps {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  alt: string;
-  technologies: string[];
-  sourceCode: HasLink;
-  website: HasLink;
-}
+// export interface ProjectProps {
+//   id: string;
+//   title: string;
+//   description: string;
+//   image: string;
+//   alt: string;
+//   technologies: string[];
+//   sourceCode: HasLink;
+//   website: HasLink;
+// }
 
-async function getData(endpoint: string): Promise<ProjectProps[]> {
-  const res = await fetch(endpoint);
+// async function getData(endpoint: string): Promise<ProjectProps[]> {
+//   const res = await fetch(endpoint);
 
-  return res.json();
-}
+//   return res.json();
+// }
 
-const projects = await getData("../../projects.json");
+// const projects = await getData("../../projects.json");
+
+const projects: ProjectProps[] = projectsData;
 
 function ProjectsPage() {
   return (

@@ -4,7 +4,7 @@ import githubLogo from "../assets/img/icon/github-mark.svg";
 
 import "./ProjectCard.css";
 
-import { ProjectProps } from "../pages/ProjectsPage";
+import { ProjectProps } from "../projectsData.ts";
 
 const TechTag = lazy(() => import("./TechTag"));
 
@@ -12,10 +12,7 @@ function ProjectCard({ project }: { project: ProjectProps }) {
   return (
     <div className="project">
       <figure className="project-img">
-        <img
-          src={`./src/assets/img/projects/${project.image}`}
-          alt={project.alt}
-        />
+        <img src={project.image} alt={project.alt} />
       </figure>
       <div className="project-content">
         <p className="project-title">{project.title}</p>
