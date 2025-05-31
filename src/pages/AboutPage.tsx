@@ -1,5 +1,6 @@
 import meImage from "../assets/img/about/me.png";
 import laptopIamge from "../assets/img/about/laptop.png";
+import shoesIamge from "../assets/img/about/shoes.png";
 import locationIcon from "../assets/img/icon/location.svg";
 
 import "./AboutPage.css";
@@ -19,6 +20,12 @@ function AboutPage() {
             className="about-img laptop"
             src={laptopIamge}
             alt="cartoon laptop"
+            draggable="false"
+          />
+          <img
+            className="about-img shoes"
+            src={shoesIamge}
+            alt="cartoon running shoes"
             draggable="false"
           />
         </div>
