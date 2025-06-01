@@ -1,6 +1,6 @@
-import meImage from "../assets/img/about/me.png";
-import laptopIamge from "../assets/img/about/laptop.png";
-import shoesIamge from "../assets/img/about/shoes.png";
+import meImage from "../assets/img/about/me.webp";
+import laptopIamge from "../assets/img/about/laptop.webp";
+import shoesIamge from "../assets/img/about/shoes.webp";
 import locationIcon from "../assets/img/icon/location.svg";
 
 import "./AboutPage.css";
