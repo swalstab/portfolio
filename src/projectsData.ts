@@ -1,6 +1,6 @@
-import runwiseImage from "./assets/img/projects/runwise.png";
-import advaentOfCode2024Image from "./assets/img/projects/advent_of_code_2024.png";
-import portfolioImage from "./assets/img/projects/portfolio.png";
+import runwiseImage from "./assets/img/projects/runwise.webp";
+import advaentOfCode2024Image from "./assets/img/projects/advent_of_code_2024.webp";
+import portfolioImage from "./assets/img/projects/portfolio.webp";
 
 interface HasLink {
   exist: boolean;
