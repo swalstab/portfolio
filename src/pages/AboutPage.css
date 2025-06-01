@@ -31,6 +31,14 @@
   display: none;
 }
 
+body:has(.coding:hover) .laptop {
+  display: block;
+}
+
+body:has(.running:hover) .shoes {
+  display: block;
+}
+
 .about-heading {
   display: flex;
   gap: 1.1rem;
