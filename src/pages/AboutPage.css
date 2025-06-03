@@ -6,8 +6,8 @@
 
 .about-content {
   row-gap: 0rem;
-  column-gap: 0;
-  grid-template-columns: 41fr 59fr;
+  column-gap: 8rem;
+  grid-template-columns: 38fr 62fr;
 }
 
 .about-content--portrait {
@@ -20,7 +20,6 @@
   height: auto;
   position: absolute;
   top: 0;
-  left: -8rem;
   transition: all 0.5s;
 }
 
