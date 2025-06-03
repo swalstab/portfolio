@@ -3,6 +3,7 @@ import cssLogo from "../assets/img/icon/css-3-logo.svg";
 import javascriptLogo from "../assets/img/icon/javascript-logo.svg";
 import typescriptLogo from "../assets/img/icon/typescript-logo.svg";
 import reactIcon from "../assets/img/icon/react-icon.svg";
+// import reactIcon from "../assets/img/icon/react-icon2.svg";
 
 import "./TechTag.css";
 
