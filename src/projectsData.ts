@@ -26,7 +26,7 @@ const projects: ProjectProps[] = [
       "A web application providing helpful tools for runners. At the moment it includes a pace calculator.",
     image: runwiseImage,
     alt: "screenshot",
-    technologies: ["react", "javascript"],
+    technologies: ["react", "javascript", "css", "html"],
     sourceCode: {
       exist: true,
       source: "https://github.com/swalstab/runwise",
@@ -37,10 +37,10 @@ const projects: ProjectProps[] = [
     id: "002",
     title: "Advent of Code 2024",
     description:
-      "Interactive interface for Advent of Code 2024 solutions — accepts input and displays results (all solutions are written in JavaScript)",
+      "An interactive interface for Advent of Code 2024 solutions. Accepts an input and displays results (all solutions are written in JavaScript)",
     image: advaentOfCode2024Image,
     alt: "screenshot",
-    technologies: ["react", "javascript"],
+    technologies: ["react", "javascript", "css", "html"],
     sourceCode: {
       exist: true,
       source: "https://github.com/swalstab/advent_of_code_2024",
@@ -54,7 +54,7 @@ const projects: ProjectProps[] = [
       "My portfolio built with TypeScript, featuring my projects. All components are handcrafted using plain CSS",
     image: portfolioImage,
     alt: "screenshot",
-    technologies: ["react", "typescript"],
+    technologies: ["react", "typescript", "css", "html"],
     sourceCode: {
       exist: true,
       source: "https://github.com/swalstab/portfolio",
