@@ -111,6 +111,7 @@ function AboutPage() {
             src={meImage}
             alt="cartoon profile picture"
             draggable="false"
+            fetchPriority="high"
           />
           <img
             className="about-img laptop"
@@ -118,6 +119,7 @@ function AboutPage() {
             alt="cartoon laptop"
             style={laptopImgStyle}
             draggable="false"
+            fetchPriority="low"
           />
           <img
             className="about-img shoes"
@@ -125,6 +127,7 @@ function AboutPage() {
             alt="cartoon running shoes"
             style={shoesImgStyle}
             draggable="false"
+            fetchPriority="low"
           />
         </div>
         <div className="about-content--text">
