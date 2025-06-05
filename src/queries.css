@@ -66,7 +66,7 @@
   }
 
   .header .nav {
-    gap: 1.8rem;
+    gap: 1.6rem;
   }
 
   .about .about-content {
@@ -98,11 +98,15 @@
   }
 
   .heading-primary {
-    font-size: 10rem;
+    font-size: 9.8rem;
+  }
+
+  .heading-secondary {
+    padding-top: 6.4rem;
   }
 
   .name .surname {
-    font-size: 4.8rem;
+    font-size: 4.4rem;
   }
 
   .app .about {
@@ -114,7 +118,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 45rem 1fr;
     row-gap: 3.2rem;
-    padding: 6rem;
+    padding: 6.4rem;
   }
 
   .about-content--portrait {
@@ -130,5 +134,50 @@
 
   .about .about-description {
     min-height: 0;
+  }
+}
+
+/* ///////////////////////////////// */
+/* BELOW 656px (Smaller Tablets) */
+/* ///////////////////////////////// */
+
+@media (max-width: 41em) {
+  .heading-primary {
+    font-size: 7.4rem;
+  }
+
+  .name .first-name {
+    letter-spacing: 2rem;
+    margin-right: -2rem;
+  }
+
+  .name .surname {
+    font-size: 2.4rem;
+    letter-spacing: 1rem;
+  }
+
+  .name .surname span {
+    margin-right: -1rem;
+  }
+
+  .project .project-content {
+    padding: 3.2rem;
+  }
+
+  .about-img {
+    transform: translate(8%);
+  }
+
+  .about-content--portrait:has(
+      .laptop[style="opacity: 1; pointer-events: auto; visibility: visible;"]
+    )
+    .about-img {
+    transform: translate(0);
+  }
+  .about-content--portrait:has(
+      .shoes[style="opacity: 1; pointer-events: auto; visibility: visible;"]
+    )
+    .about-img {
+    transform: translate(0);
   }
 }
