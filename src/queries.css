@@ -39,6 +39,7 @@
   }
 
   .about .about-location {
+    gap: 0.8rem;
     font-size: 1.6rem;
   }
 
@@ -164,6 +165,10 @@
     padding: 3.2rem;
   }
 
+  .about .about-content {
+    grid-template-rows: 35rem 1fr;
+  }
+
   .about-img {
     transform: translate(8%);
   }
@@ -179,5 +184,74 @@
     )
     .about-img {
     transform: translate(0);
+  }
+}
+
+/* ///////////////////////////////// */
+/* BELOW 544px (Phones) */
+/* ///////////////////////////////// */
+
+@media (max-width: 34em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+
+  .name .surname {
+    font-size: 2rem;
+  }
+
+  .about .about-content {
+    grid-template-rows: 30rem 1fr;
+  }
+}
+
+/* ///////////////////////////////// */
+/* BELOW 416px (Smaller Phones) */
+/* ///////////////////////////////// */
+
+@media (max-width: 26em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .name .first-name {
+    letter-spacing: 1.6rem;
+    margin-right: -1.6rem;
+  }
+
+  .name .surname {
+    font-size: 1.6rem;
+    letter-spacing: 0.8rem;
+  }
+
+  .name .surname span {
+    margin-right: -0.8rem;
+  }
+
+  .about .about-content {
+    padding: 4.8rem;
+  }
+
+  .about .about-heading {
+    font-size: 4.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .about .about-description {
+    font-size: 1.8rem;
+  }
+}
+
+/* ///////////////////////////////// */
+/* BELOW 384px */
+/* ///////////////////////////////// */
+
+@media (max-width: 24em) {
+  .about .about-content {
+    padding: 3.2rem;
   }
 }
