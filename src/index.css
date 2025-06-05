@@ -70,14 +70,14 @@ body {
 
 .container {
   max-width: 140rem;
-  padding: 0 3.2rem;
+  padding: 0 4.8rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
   column-gap: 6.4rem;
-  row-gap: 9.6rem;
+  row-gap: 6.4rem;
 }
 
 .grid--3-cols {

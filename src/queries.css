@@ -1,0 +1,134 @@
+/* ///////////////////////////////// */
+/* BELOW 1408px (Smaller desktops) */
+/* ///////////////////////////////// */
+
+@media (max-width: 88em) {
+  .container {
+    max-width: 120rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 4.8rem;
+  }
+
+  .project .project-content {
+    padding: 4rem;
+  }
+
+  .project-content .project-title {
+    font-size: 2.4rem;
+  }
+
+  .project-tags .tag {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .about .about-heading {
+    font-size: 4.8rem;
+  }
+
+  .about .about-content {
+    column-gap: 4.8rem;
+  }
+
+  .about .about-description {
+    font-size: 2rem;
+    min-height: 25.2rem;
+  }
+
+  .about .about-location {
+    font-size: 1.6rem;
+  }
+
+  .about .location-icon {
+    height: 2.4rem;
+  }
+}
+
+/* ///////////////////////////////// */
+/* BELOW 1200px (Landscape Tablets) */
+/* ///////////////////////////////// */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4rem;
+    row-gap: 4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .header .nav {
+    gap: 1.8rem;
+  }
+
+  .about .about-content {
+    column-gap: 3.2rem;
+  }
+}
+
+/* ///////////////////////////////// */
+/* BELOW 1056px */
+/* ///////////////////////////////// */
+
+@media (max-width: 66em) {
+  html {
+    font-size: 50%;
+  }
+}
+/* ///////////////////////////////// */
+/* BELOW 944px (Tablets) */
+/* ///////////////////////////////// */
+
+@media (max-width: 59em) {
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 4.8rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading-primary {
+    font-size: 10rem;
+  }
+
+  .name .surname {
+    font-size: 4.8rem;
+  }
+
+  .app .about {
+    display: block;
+  }
+
+  .about .about-content {
+    max-width: 85rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45rem 1fr;
+    row-gap: 3.2rem;
+    padding: 6rem;
+  }
+
+  .about-content--portrait {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .about-content .about-img {
+    height: 100%;
+    width: auto;
+  }
+
+  .about .about-description {
+    min-height: 0;
+  }
+}
