@@ -131,6 +131,20 @@
   .about-content .about-img {
     height: 100%;
     width: auto;
+    transform: translate(8%);
+  }
+
+  .about-content--portrait:has(
+      .laptop[style="opacity: 1; pointer-events: auto; visibility: visible;"]
+    )
+    .about-img {
+    transform: translate(0);
+  }
+  .about-content--portrait:has(
+      .shoes[style="opacity: 1; pointer-events: auto; visibility: visible;"]
+    )
+    .about-img {
+    transform: translate(0);
   }
 
   .about .about-description {
@@ -167,23 +181,6 @@
 
   .about .about-content {
     grid-template-rows: 35rem 1fr;
-  }
-
-  .about-img {
-    transform: translate(8%);
-  }
-
-  .about-content--portrait:has(
-      .laptop[style="opacity: 1; pointer-events: auto; visibility: visible;"]
-    )
-    .about-img {
-    transform: translate(0);
-  }
-  .about-content--portrait:has(
-      .shoes[style="opacity: 1; pointer-events: auto; visibility: visible;"]
-    )
-    .about-img {
-    transform: translate(0);
   }
 }
 
