@@ -1,17 +1,20 @@
 .header {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
   height: 9.6rem;
   padding: 0rem 4.8rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   z-index: 999;
-  background-color: transparent;
 }
 
-.link--home {
+.link--home:link,
+.link--home:visited,
+.link--home:hover,
+.link--home:active {
   border-radius: 50%;
 }
 
@@ -21,7 +24,13 @@
   display: block;
 }
 
-.nav {
+.header--content {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.nav-list {
   list-style: none;
   display: flex;
   align-items: center;
@@ -30,8 +39,8 @@
   font-weight: 600;
 }
 
-.nav-item:link,
-.nav-item:visited {
+.nav-link:link,
+.nav-link:visited {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -43,15 +52,15 @@
 
 .btn-theme:hover,
 .nav-git:hover,
-.nav-item:hover,
-.nav-item:active {
+.nav-link:hover,
+.nav-link:active {
   background-color: var(--bg-color--hover);
 }
 
 .dark .btn-theme:hover,
 .dark .nav-git:hover,
-.dark .nav-item:hover,
-.dark .nav-item:active {
+.dark .nav-link:hover,
+.dark .nav-link:active {
   background-color: var(--bg-color--hover--dark);
 }
 

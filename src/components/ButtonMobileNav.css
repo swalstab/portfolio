@@ -1,0 +1,11 @@
+.btn-mobile-nav {
+  border: none;
+
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  background-color: rgba(115, 115, 115, 0.7);
+
+  cursor: pointer;
+  display: none;
+}

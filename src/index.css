@@ -2,6 +2,7 @@
 
 :root {
   --bg-color: #fff;
+  --bg-color--transparent: rgba(255, 255, 255, 0.9);
   --bg-color--hover: rgba(0, 0, 0, 0.12);
   --bg-color--hover--dark: rgba(255, 255, 255, 0.12);
   --bg-color--card: #fff;
@@ -28,6 +29,7 @@
 
 [data-theme="dark"] {
   --bg-color: #222;
+  --bg-color--transparent: rgba(34, 34, 34, 0.9);
   --bg-color--hover: rgba(255, 255, 255, 0.12);
   --bg-color--card: #2b2b2b;
   --text-color--primary: #fff;
