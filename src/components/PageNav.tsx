@@ -21,7 +21,7 @@ function PageNav({
   const isHome: boolean = useLocation().pathname === "/";
   const [navIsOpen, setNavIsOpen] = useState<boolean>(false);
   const imgGit: string =
-    theme === "dark" || isHome ? githubWhiteLogo : githubLogo;
+    theme === "dark" || (isHome && !navIsOpen) ? githubWhiteLogo : githubLogo;
   const imgTheme: string = theme === "dark" ? sunIcon : moonIcon;
 
   function handleNavBtn(): void {
@@ -34,7 +34,7 @@ function PageNav({
 
   return (
     <header
-      className={`header${isHome ? " dark" : ""}${
+      className={`header${isHome && !navIsOpen ? " dark" : ""}${
         navIsOpen ? " nav-open" : ""
       }`}
     >
@@ -74,7 +74,11 @@ function PageNav({
           <img
             src={imgTheme}
             alt=""
-            style={theme === "dark" || isHome ? { filter: "invert()" } : {}}
+            style={
+              theme === "dark" || (isHome && !navIsOpen)
+                ? { filter: "invert()" }
+                : {}
+            }
             draggable="false"
           />
         </button>
