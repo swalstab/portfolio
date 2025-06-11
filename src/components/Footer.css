@@ -5,16 +5,15 @@
   background-color: transparent;
 }
 
-.copyright {
-  font-size: 1.6rem;
+.footer .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .legal {
   display: flex;
   gap: 1.2rem;
   justify-content: center;
-  margin-bottom: 2rem;
-  margin-bottom: 1.6rem;
 }
 
 .legal a:link,

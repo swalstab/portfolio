@@ -10,13 +10,11 @@ function Footer() {
   return (
     <footer className={`footer ${isHome ? "dark" : ""}`}>
       <div className="container">
-        <div className="legal center-text">
+        <div className="legal">
           <Link to="/impressum">Impressum</Link>
         </div>
 
-        <div className="copyright center-text">
-          <p>&copy; {currentYear} Stefanie Walstab</p>
-        </div>
+        <p>&copy; {currentYear} Stefanie Walstab</p>
       </div>
     </footer>
   );
