@@ -1,11 +1,37 @@
 .btn-mobile-nav {
   border: none;
-
-  width: 5.2rem;
-  height: 5.2rem;
+  width: 4.8rem;
+  height: 4.8rem;
   border-radius: 50%;
-  background-color: rgba(115, 115, 115, 0.7);
-
+  background-color: transparent;
   cursor: pointer;
   display: none;
+}
+
+.btn-mobile-nav .bar {
+  position: relative;
+  width: 75%;
+  height: 3px;
+  background-color: var(--text-color--primary);
+  border-radius: 6px;
+}
+
+.btn-mobile-nav .bar::before,
+.btn-mobile-nav .bar::after {
+  content: "";
+  width: 80%;
+  height: 100%;
+  background-color: var(--text-color--primary);
+  border-radius: 6px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-mobile-nav .bar::before {
+  top: -8px;
+}
+
+.btn-mobile-nav .bar::after {
+  top: 8px;
 }

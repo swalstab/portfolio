@@ -155,6 +155,9 @@
   /* MOBILE NAVIGATION */
   .header .btn-mobile-nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
     z-index: 1000;
   }
 
@@ -172,10 +175,35 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 
   .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
     transform: translate(0);
+  }
+
+  .nav-open .btn-mobile-nav {
+    transform: rotate(90deg);
+  }
+
+  .nav-open .btn-mobile-nav .bar {
+    background-color: transparent;
+  }
+
+  .nav-open .btn-mobile-nav .bar::before {
+    width: 100%;
+    transform: translate(-50%, 8px) rotate(45deg);
+  }
+
+  .nav-open .btn-mobile-nav .bar::after {
+    width: 100%;
+    transform: translate(-50%, -8px) rotate(-45deg);
   }
 
   .header .nav-list {
