@@ -13,7 +13,7 @@ function ProjectsPage() {
         <div className="container">
           <h2 className="heading-secondary">Projects</h2>
         </div>
-        <div className="container grid grid--3-cols">
+        <div className="container grid grid--3-cols margin-bottom-md">
           {projects.map((p: ProjectProps) => (
             <ProjectCard key={p.id} project={p} />
           ))}

@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Footer.css";
 
 const currentDate: Date = new Date();
@@ -10,9 +10,13 @@ function Footer() {
   return (
     <footer className={`footer ${isHome ? "dark" : ""}`}>
       <div className="container">
-        <p className="copyright">
-          &copy; <span>{currentYear}</span> Stefanie Walstab
-        </p>
+        <div className="legal center-text">
+          <Link to="/impressum">Impressum</Link>
+        </div>
+
+        <div className="copyright center-text">
+          <p>&copy; {currentYear} Stefanie Walstab</p>
+        </div>
       </div>
     </footer>
   );

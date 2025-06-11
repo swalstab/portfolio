@@ -1,5 +1,5 @@
 .about {
-  min-height: calc(100vh - 18.24rem);
+  min-height: calc(100vh - 22.5rem);
   display: flex;
   align-items: center;
 }
@@ -39,7 +39,7 @@
 }
 
 .active-language {
-  text-decoration: underline 0.8rem solid var(--active);
+  text-decoration: underline solid var(--active) 0.8rem;
 }
 
 .about-description {
