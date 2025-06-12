@@ -83,7 +83,7 @@ function PageNav({
           />
         </button>
 
-        <ButtonMobileNav handleNavBtn={handleNavBtn} />
+        <ButtonMobileNav navIsOpen={navIsOpen} handleNavBtn={handleNavBtn} />
       </div>
     </header>
   );

@@ -1,12 +1,18 @@
 import "./ButtonMobileNav.css";
 
 function ButtonMobileNav({
+  navIsOpen,
   handleNavBtn,
 }: {
-  handleNavBtn: React.MouseEventHandler<HTMLButtonElement>;
+  navIsOpen: boolean;
+  handleNavBtn: () => void;
 }) {
   return (
-    <button className="btn-mobile-nav" onClick={handleNavBtn}>
+    <button
+      className="btn-mobile-nav"
+      onClick={handleNavBtn}
+      aria-label={`${navIsOpen ? "Close" : "Open"} Menu`}
+    >
       <div className="bar"></div>
     </button>
   );
