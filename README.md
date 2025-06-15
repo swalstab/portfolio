@@ -57,12 +57,12 @@ To run the project locally, make sure you have **Node.js** and **npm** installed
 
 ### Homepage
 
-![](./docs/img/Screenshot HomePage.png)
+![](./docs/img/Screenshot_HomePage.png)
 
 ### Project Page
 
-![](./docs/img/Screenshot ProjectPage.png)
+![](./docs/img/Screenshot_ProjectPage.png)
 
 ### About Page
 
-![](./docs/img/Screenshot AboutPage.png)
+![](./docs/img/Screenshot_AboutPage.png)
