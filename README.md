@@ -2,11 +2,15 @@
 
 This repository contains the source code for my personal portfolio website, built with **React** and **TypeScript**. It showcases a modern, responsive design created with **modern CSS** techniques.
 
+## Live Demo
+
+[website](https://swalstab.netlify.app/)
+
 ## Features
 
-* Built with **React** and **TypeScript**
-* Styled using **modern CSS** (Flexbox, Grid, custom properties, etc.)
-* Fully **responsive** design for all screen sizes
+- Built with **React** and **TypeScript**
+- Styled using **modern CSS** (Flexbox, Grid, custom properties, etc.)
+- Fully **responsive** design for all screen sizes
 
 ## Getting Started
 
@@ -45,7 +49,20 @@ To run the project locally, make sure you have **Node.js** and **npm** installed
 
 ## Dependencies
 
-* React
-* TypeScript
-* Vite
+- React
+- TypeScript
+- Vite
 
+## Screenshots
+
+### Homepage
+
+![](./docs/img/Screenshot HomePage.png)
+
+### Project Page
+
+![](./docs/img/Screenshot ProjectPage.png)
+
+### About Page
+
+![](./docs/img/Screenshot AboutPage.png)
