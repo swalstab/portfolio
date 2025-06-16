@@ -16,7 +16,7 @@ function Impressum() {
             01069 Dresden
           </p>
           <p className="margin-bottom-md">
-            E-Mail: info.swalstab (at) gmail.com
+            E-Mail: info.swalstab(at)gmail.com
             <br />
             Internet:{" "}
             <a href="https://swalstab.netlify.app/">swalstab.netlify.app</a>
@@ -26,7 +26,9 @@ function Impressum() {
             Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
           </h3>
           <p className="margin-bottom-md">
-            Stefanie Walstab (Anschrift wie oben)
+            Stefanie Walstab
+            <br />
+            (Anschrift wie oben)
           </p>
 
           <h3 className="heading-tertiary">Haftungsausschluss:</h3>
