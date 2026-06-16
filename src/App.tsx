@@ -1,6 +1,6 @@
 import { lazy } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
-import useLocalStorage from "use-local-storage";
+import { HashRouter, Routes, Route } from "react-router";
+import { useLocalStorageState } from "./hooks/useLocalStorageState";
 
 import "./App.css";
 
@@ -13,10 +13,10 @@ const Impressum = lazy(() => import("./pages/Impressum"));
 
 function App() {
   const defaultDark: boolean = window.matchMedia(
-    "(prefers-color-scheme: dark)"
+    "(prefers-color-scheme: dark)",
   ).matches;
   const defaultTheme = defaultDark ? "dark" : "light";
-  const [theme, setTheme] = useLocalStorage("theme", defaultTheme);
+  const [theme, setTheme] = useLocalStorageState("theme", defaultTheme);
 
   function handleThemeButton(): void {
     setTheme((theme) => (theme === "dark" ? "light" : "dark"));

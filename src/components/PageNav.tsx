@@ -1,4 +1,4 @@
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router";
 
 import swLogo from "../assets/img/icon/logo-sw-110.png";
 import githubLogo from "../assets/img/icon/github-mark.svg";
