@@ -48,8 +48,7 @@ markup
     descriptionBeforeRunning: `When I’m not coding, you’ll probably find me `,
     descriptionRunning: `running`,
     descriptionAfterRunning: `. I’m fascinated by the challenge of 
-      marathons and ultramarathons, and I love pushing my limits, both on 
-      the road and in code.`,
+      marathons and ultramarathons.`,
     location: "Dresden, Germany",
     locationRunning: `All over the world`,
   })
@@ -65,8 +64,7 @@ markup
       man mich wahrscheinlich beim `,
     descriptionRunning: `Laufen`,
     descriptionAfterRunning: `. Besonders Marathons und Ultramarathons 
-      haben es mir angetan. Es fasziniert mich, meine Grenzen 
-      auszutesten, sowohl auf der Laufstrecke als auch im Code.`,
+      haben es mir angetan.`,
     location: "Dresden, Deutschland",
     locationRunning: `Auf der ganzen Welt`,
   })
@@ -81,8 +79,7 @@ markup
       estoy `,
     descriptionRunning: `corriendo`,
     descriptionAfterRunning: `. Me fascinan especialmente los maratones 
-      y ultramaratones y me encanta superar mis límites, tanto en la 
-      carretera como en el código.`,
+      y ultramaratones.`,
     location: "Dresde, Alemania",
     locationRunning: `En todo el mundo`,
   });
